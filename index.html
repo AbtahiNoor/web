@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        #home img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Myself</a></li>
+                <li><a href="#portfolio">My Achievements</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="home">
+        <h1>Hello! I am Abtahi Noor</h1>
+        <img src="mypic.jpg" alt="My Picture" >
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>  <i> I'm Abtahi Noor. I am currently a student in the CSE department at BRAC University. Moreover, I am working on a project named Bracu Alter as a member of the AI department. <br>Before that, I was also a member of the project named Bracu Dichari. In addition, I am a formal member of the robotics club at Bracu called ROBU (Robotics Club Of Brac University). </i></p>
+
+        <p><i>Besides, I am the founder of a youth organization named Institute of Young Talents (IYT).Our vision is to hunt young talents and make a good team for attaining success.<br> And finally, I want to engage myself in the field of research works. </i></p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Achievements</h2>
+        <div class="project">
+            <h3> 
+                <ul>
+                    <li>Senior Contributor at <a href="https://www.facebook.com/bracudichari" target="_blank">BRACU DICHARI</a></li>
+
+                    <li>Founding Panel member of BRACU MULTICULTURAL CLUB</li>
+                </ul>
+                <br>
+
+                <img src="dichari.jpg" alt="My Picture" width="500">
+            </h3>
+            <h2>My Hobbies</h2>
+
+            <h3> 
+                <ol>
+                    <li>Travelling</li>
+                    <li>Playing Football</li>
+                    <li>Robotics</li>
+                    <li>Reading Books</li>
+                </ol>
+            </h3>
+
+            <h2> Links </h2>
+
+            <p><a href="https://www.bracu.ac.bd/" target="_blank">My University</a></p>
+            <p><a href="https://piazza.com/bracu.ac.bd/spring2023/cse391/" target="_blank">CSE391 Piazza</a></p>
+            <p><a href="https://www.linkedin.com/in/abtahi-noor-03196021b/" target="_blank"> Linkedin </a></p>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Science</td>
+                    <td>BRAC UNIVERSITY <br> Department: Computer Science & Engineering </td>
+                    <td>2021- Ongoing</td>
+                </tr>
+                <tr>
+                    <td>High School</td>
+                    <td>Notre Dame College <br> Group: Science </td>
+                    <td>2018-2020</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+
+        <section id="footer-section">
+            <footer>
+        
+                <p id="page-location"></p>
+                <p id="last-modified"></p>
+            </footer>
+        </section>
+      
+      <script>
+        var pageLocation = window.location.href;
+        document.getElementById("page-location").textContent = "Page Location: " + pageLocation;
+      
+        var lastModified = new Date(document.lastModified);
+        document.getElementById("last-modified").textContent = "Last Modified: " + lastModified;
+      </script>
+
+</body>
+</html>
